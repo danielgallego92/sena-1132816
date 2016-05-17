@@ -1,0 +1,25 @@
+doctype
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  title Elementos de Entrada (Formulario)
+body
+  h1 Elementos de Entrada (Formulario)
+  hr
+  form(method='post')
+    label(for='lenguajes') Lista de lenguajes de programacion:
+    input(list='lenguajes')
+    datalist(id='lenguajes')
+      option(value='python') Python
+      option(value='Ruby') Ruby
+      option(value='Php') Php
+      option(value='C#') C#
+    br
+    br
+    laber(for='generador') Generador de Claves:
+    keygen(id='generador')
+    br
+    br
+    label(for='salida') Salida:
+    input(type='range', id='rango', oninput='salida.value=this.value')
+    output(id='salida') Mensaje de Salida

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario</title>
+</head>
+<body>
+  <form method="post"></form>
+  <div>
+    <fieldset>
+      <legend>Datos De Usuario</legend>
+      <!-- Nombre---------------------->
+      <label for="nombres">Nombres</label>
+      <input type="text" id="nombres"><br><br><br>
+      <label for="contraseña">Contraseña</label>
+      <input type="password" id="contraseña"><br><br>
+    </fieldset>
+  </div>
+</body>
+<div>
+  <fieldset>
+    <!-- Foto ----------------------->
+  </fieldset>
+</div>
+<div>
+  <fieldset>
+    <label for="foto">Foto</label>
+    <input type="file" id="foto" accept="image/*"><br><br>
+    <!-- Lenguaje de Programacion--------------------------->
+    <label>Lenguaje de Programacion:</label><br>
+    <label>PHP
+      <input type="checkbox" name="lenguajes" value="PHP">
+    </label>
+    <label>Java
+      <input type="checkbox" name="lenguajes" value="Java">
+    </label>
+    <label>C#
+      <input type="checkbox" name="lenguajes" value="C#">
+    </label><br><br>
+    <!-- Nacionalidad---------------------->
+    <label>Nacionalidad</label><br>
+    <label>Colombia
+      <input type="radio" name="nacionalidad" value="colombia">
+    </label>
+    <label>Alemania
+      <input type="radio" name="nacionalidad" value="alemania">
+    </label>
+    <label>Argentina
+      <input type="radio" name="nacionalidad" value="argentina">
+    </label><br><br>
+    <!-- Genero ---------------->
+    <label for="Genero">Genero</label>
+    <select id="genero">
+      <option>Seleccione...</option>
+      <option value="F">Femenino</option>
+      <option value="M">Masculino</option>
+    </select><br><br>
+  </fieldset>
+</div>
+<div>
+  <fieldset>
+    <!-- Deporte-------------->
+    <label for="deporte">Deporte</label>
+    <select multiple="multiple" id="deporte">
+      <option value="1">Futbol</option>
+      <option value="2">Baloncesto</option>
+      <option value="3">Tennis</option>
+      <option value="4">Natacion</option>
+    </select><br><br>
+    <!--Descripcion----------------------------   -->
+    <label for="descripcion">Descripcion</label>
+    <textarea id="descripcion" cols="40" rows="6"></textarea><br><br>
+    <!--botones----------------------------------------->
+    <input type="submit" value="Enviar Datos">
+    <input type="reset" value="Reiniciar Formulario">
+  </fieldset>
+</div>

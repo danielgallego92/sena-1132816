@@ -1,0 +1,72 @@
+doctype
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  title Formulario
+body
+  form(method='post')
+    fieldset
+      legend Datos De Usuario
+      // Nombre--------------------
+      label(for='nombres') Nombres
+      input(type='text', id='nombres')
+      br
+      br
+      br
+      // Contraseña------------------------
+      label(for='contraseña') Contraseña
+      input(type='password', id='contraseña')
+      br
+      br
+      // Foto ---------------------
+      label(for='foto') Foto
+      input(type='file', id='foto', accept='image/*')
+      br
+      br
+      // Lenguaje de Programacion-------------------------
+      label Lenguaje de Programacion:
+      br
+      label PHP
+        input(type='checkbox', name='lenguajes', value='PHP')
+      label Java
+        input(type='checkbox', name='lenguajes', value='Java')
+      label C#
+        input(type='checkbox', name='lenguajes', value='C#')
+      br
+      br
+      // Nacionalidad--------------------
+      label Nacionalidad
+      br
+      label Colombia
+        input(type='radio', name='nacionalidad', value='colombia')
+      label Alemania
+        input(type='radio', name='nacionalidad', value='alemania')
+      label Argentina
+        input(type='radio', name='nacionalidad', value='argentina')
+      br
+      br
+      // Genero --------------
+      label(for='Genero') Genero
+      select(id='genero')
+        option Seleccione...
+        option(value='F') Femenino
+        option(value='M') Masculino
+      br
+      br
+      // Deporte------------
+      label(for="deporte") Deporte
+      select(multiple='multiple', id='deporte')
+        option(value='1') Futbol
+        option(value='2') Baloncesto
+        option(value='3') Tennis
+        option(value='4') Natacion
+      br
+      br
+      //Descripcion----------------------------   
+      label(for='descripcion') Descripcion
+      textarea(id='descripcion', cols='40', rows='6')
+      //botones---------------------------------------
+      input(type='submit', value='Enviar Datos')
+      input(type='reset', value='Reiniciar Formulario')
+      
+    
