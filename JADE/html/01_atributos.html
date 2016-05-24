@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Atributos (jade)</title>
+    <style stylesheet>
+      .verde   {color:green;}
+      .rojo    {color:red;}
+      .amarillo{background-color: yellow;}
+      .center  {text-align:center;}
+      .rayado  {text-decoration:underline;}
+      .active  {background: black; color:lime;}
+    </style>
+  </head>
+  <body>
+    <h1>Atributos (jade)</h1>
+    <!--un solo atributo--><a href="http://www.google.com">Ir a Google</a>
+    <!--varios atributos-->&nbsp; | &nbsp;<a href="http://www.yahoo.com" target="_black" class="link">Ir a Yahoo</a><br><br>
+    <!--variable-->
+    <!--codicional valores de los atributos-->
+    <div class="rojo">color</div><br><br>
+    <!--atributos en varias lineas-->
+    <input type="number" min="10" max="99" placeholder="ingrese el numero"><br><br>
+    <!--atributos booleanos-->falso
+    <input type="radio" name="bool">verdadero
+    <input type="radio" name="bool" checked><br><br>
+    <!--atributo style-->
+    <button style="background:crimson;color:white;border:none;padding:10px">boton</button><br><br>
+    <!--clase de atributo-->
+    <h2 class="amarillo center rayado">Daniel Gallego C</h2><br><br>
+    <!--seccion actual -->
+    <nav>
+      <li><a href="/">Inicio</a></li>
+      <li><a href="/nosotros" class="active">Nosotros</a></li>
+      <li><a href="/servicios">Servicios</a></li>
+      <li><a href="/contactos">Contactos</a></li><br><br>
+      <!--clases e indentificadores literales-->
+      <div class="amarillo">clase</div><br>
+      <div class="amarillo center rayado">Division</div><br>
+      <div id="cod1">Texto</div><br>
+      <div id="cod2" class="amarillo center rayado">Texto</div><br><br>
+      <div class="rojo" data-color="red">Lorem Ipsum</div>
+    </nav>
+  </body>
+</html>
