@@ -1,0 +1,25 @@
+doctype
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    title interaccion
+    body
+      //- Declaration
+      mixin list
+       ul
+         li foo
+         li bar
+         li baz
+      //- Use
+      +list
+      +list
+      br
+      br
+      mixin pet(name)
+        li.pet= name
+      ul
+        +pet('cat')
+        +pet('dog')
+        +pet('pig')
+
+      
